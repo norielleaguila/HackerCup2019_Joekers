@@ -85,7 +85,7 @@ public class MainActivity extends FragmentActivity implements TabHost.OnTabChang
         TabInfo tabInfo = null;
         MainActivity.addTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab1").setIndicator("Tab 1"), ( tabInfo = new TabInfo("Tab1", TabFragment1.class, args)));
         this.mapTabInfo.put(tabInfo.tag, tabInfo);
-        MainActivity.addTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab2").setIndicator("Tab 2"), ( tabInfo = new TabInfo("Tab2", TabFragment1.class, args)));
+        MainActivity.addTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab2").setIndicator("Tab 2"), ( tabInfo = new TabInfo("Tab2", TabFragment2.class, args)));
         this.mapTabInfo.put(tabInfo.tag, tabInfo);
 //        MainActivity.addTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab3").setIndicator("Tab 3"), ( tabInfo = new TabInfo("Tab3", Tab3Fragment.class, args)));
 //        this.mapTabInfo.put(tabInfo.tag, tabInfo);
