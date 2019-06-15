@@ -1,3 +1,4 @@
+
 const projectTitles = [
 	"VistaGreen",
 	"iBoost",
@@ -27,20 +28,50 @@ const images = {
 };
 
 
-$(document).ready(() => {
-	// projectTitles.forEach((title) => {
-		// addProject(title);
-	// });
+$(document).ready(function(){
+
+		// projectTitles.forEach((title) => {
+			// addProject(title);
+		// });
+
+  $('#users').mouseenter(function () {
+
+        var x = document.getElementById('clickedNavBarLinks');
+        x.innerHTML = "<div>" +
+                      "<input id = \"username-input\" type = \"text\"  placeholder=\"Username\">" +
+                      "</div>" +
+                      "<div>" +
+                      "<input id = \"password-input\" type = \"password\" placeholder=\"Password\">" +
+                      "</div>" +
+                      "<button class=\"input-box\" id = \"loginButton\">Log In</button>";
+
+      x.style.display =  'block';
+         $('#clickedNavBarLinks').show();
+       });
+
+   $(' #clickedNavBarLinks').mouseleave(function () {
+       $('#clickedNavBarLinks').hide();
+       }
+   ).mouseleave();//trigger mouseleave to hide second div in beginning
+
+    $('#users').hover(function(){
 });
 
 
+		$('.expand').click(function(e){
+			if($('#' + this.id).text() == 'Collapse Post'){
+				$('#desc' + this.id).css('display', 'none');
+				$('#' + this.id).text('Expand Post');
+			}
+			else{
+				$('#desc' + this.id).css('display', 'block');
+				$('#' + this.id).text('Collapse Post');
+			}
 
-/////////////////////////////////////////////////////////////
-//// FUNCTIONS
-/////////////////////////////////////////////////////////////
+		});
+});
 
 
-//  Preppend the project to the site (div#projectList)
 function addProject(title) {
 
 	// Add project's description

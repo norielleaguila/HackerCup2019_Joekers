@@ -6,37 +6,135 @@ body *{
   color: white;
 }
 
+a:hover{
+  text-decoration: none;
+}
+
 #navBar{
   background: linear-gradient( black, rgba(26, 26, 26, 0));
 
+}
+
+#clickedNavBarLinks{
+    position: fixed;
+    display: none;
+    background-color: #fffffff0;
+    padding: 10px;
+    padding-top: 15px;
+    box-shadow: 2px 2px 15px rgba(57, 57, 57, 0.53);
+    direction: ltr;
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+    transform-origin:top right;
+    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-direction: normal;
+    top: 60px;
+}
+
+.qa:hover{
+    background-color: #800000;
+}
+
+#clickedNavBarLinks > * {
+  margin: .5rem;
+}
+
+#loginButton{
+  background: #FFDD03;
+  color: black;
+  border: none;
+  padding: 5px;
+  width: 75px;
 }
 
 .dropdown:hover{
   cursor: pointer;
 }
 
+#clickedNavBarLinks *{
+  color: black!important;
+}
 .link:hover{
   color: #FFDD03;
 }
 
-#currentcase .top{
-
-}
-
 #currentcase .description{
-  visibility: hidden;
+  display: none;
+  padding: 15px;
 }
 
-.cc-post{
+#currentcase{
+  width: 40%;
+}
+
+.feed{
+
+    margin-top: 5rem;
+}
+
+#currentcase .cc-post{
   margin-top: 5rem;
+  border-radius: 5px;
+  background-color: white;
+  /* max-width: 50%; */
 }
 
-.cc-post *{
+#currentcase .cc-post *{
   color: black;
   font-weight: 400;
 }
 
-.cc-post > *, .cc-post{
-  border: white 1px groove;
-  background-color: white;
+#currentcase .top{
+  display: block;
+  padding: 15px;
+}
+
+#currentcase .descriptionSnippet{
+  display: flex;
+  justify-content: center;
+}
+
+ #currentcase .descriptionSnippet > * {
+  flex-basis: 45%;
+  /* background-color: black; */
+  margin: 10px;
+  max-width: 45%;
+  text-align: center;
+}
+
+#currentcase .descriptionSnippet .image img {
+  max-height: 200px;
+  object-fit: cover;
+  /* max-width: -webkit-fill-available; */
+}
+
+#currentcase .tags{
+  display: block;
+  padding: 10px;
+}
+
+#currentcase .tag{
+  margin: 3px;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+  background-color: #FFDD03;
+}
+
+#currentcase .tag:hover{
+  color: white;
+  cursor: pointer;
+}
+
+#currentcase .expand{
+  padding: 5px;
+  text-align: center;
+}
+
+#currentcase .expand:hover{
+  background: #FFDD03;
+  cursor: pointer;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

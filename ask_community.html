@@ -3,8 +3,6 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- Custom stylesheet -->
-        <link rel="stylesheet" href="./css/style.css">
         <!-- Bootstrap JS, Popper.js, jQuery -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -20,67 +18,97 @@
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
          <!-- FontAwesome -->
-         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-         <link href="./css/all.css" rel="stylesheet"> <!--load all styles -->
+         <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+         <link href="./css/all.css" rel="stylesheet">
+         <!--load all styles -->
          <!-- Custom stylesheet -->
          <link rel="stylesheet" href="./css/general.css">
-         <script src="./js/main.js"></script>
          <title>LawGo</title>
     </head>
     <body>
 
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id = "navBar">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <h2 id = "siteTitle">LawGo</h2>
+          </a>
+          <span class>
+            <!-- Search form -->
+            <input id="searchBar" class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </span>
 
-
-        <div class = "container">
-            <div class ="row">
-                <div class = "row">
-                    <nav class="navbar navbar-expand-lg navbar-light" id = "navBar">
-                  		<div class="container">
-                  			<a class="navbar-brand" href="#">
-                  				<h2 id = "siteTitle">LawGo</h2>
-                  			</a>
-
-                  			<!-- Responsive navBar (collapsible menu) -->
-                  			<button class="navbar-toggler" type="button" data-toggle="collapse"
-                  					data-target="#navBarCollapsibleOptions" aria-controls="navBarCollapsibleOptions"
-                  					aria-expanded="false" aria-label="Toggle navigation">
-                  				<span class="navbar-toggler-icon"></span>
-                  			</button>
-                  			<div class="collapse navbar-collapse ml-5" id="navBarCollapsibleOptions">
-                  				<ul class="navbar-nav ml-auto" id = "navBarLinks">
-                            <li class="nav-item">
-                              <a class="nav-link dropdown" id = "laws">
-                                <i class="fas fa-gavel"></i>
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link dropdown" id = "ask">
-                                <i class="fas fa-question"></i>
-                              </a>
-                            </li>
-                  					<li class="nav-item">
-                              <a class="nav-link dropdown" id = "users">
-                                <i class="fas fa-user-tie"></i>
-                              </a>
-                            </li>
-                  					<div id = "clickedNavBarLinks">
-                  					</div>
-                  				</ul>
-                  			</div>
-
-                  		</div>
-
-                      </nav>
-                </div>
-            </div>
-            <div class = "row">
-                <div class = "col">
-                    <!-- Search form -->
-                    <input id="searchBar" class="form-control" type="text" placeholder="Search" aria-label="Search">
-                </div>
-            </div>
+          <!-- Responsive navBar (collapsible menu) -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navBarCollapsibleOptions" aria-controls="navBarCollapsibleOptions"
+              aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ml-5" id="navBarCollapsibleOptions">
+            <ul class="navbar-nav ml-auto" id = "navBarLinks">
+              <li class="nav-item dropdown">
+                <a class="nav-link" id = "laws" href="./index.html">
+                  <i class="fas fa-gavel link"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id = "ask" href="./ask_community.html">
+                  <i class="fas fa-question link"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id = "users" >
+                  <i class="fas fa-user-tie link"></i>
+                </a>
+              </li>
+              <div id = "clickedNavBarLinks">
+                <div>
+                  <input id = \"username-input\" type = \"text\"  placeholder=\"Username\">
+                  </div>
+                  <div>
+                  <input id = \"password-input\" type = \"password\" placeholder=\"Password\">
+                  </div>
+                  <button class=\"input-box\" id = \"loginButton\">Log In</button>
+              </div>
+            </ul>
+          </div>
 
         </div>
+
+        </nav>
+                          <div class="feed container" id="ask_community">
+                              <h2>Is it legal? Questions and Answers</h2>
+                              <input id = "comment" class="form-control form-control-lg comment" type="text" placeholder="Enter your comment here... ">
+                              <div class = "row mb-5">
+
+                                <div class="qa m-2 col-md-5 border rounded"><div class="m-0">0 responses</div><div class = "headline">Human Rights and its significance on the Philippines' war on drugs</div></div>
+                                <div class="qa m-2 col-md-5 border rounded"><div class="m-0">52 responses</div><div class = "headline">Kinuha ng kapit-bahay ko ang ulam namen, maaari ko ba syang kasuhan</div></div>
+
+
+                              </div>
+                              <div class = "row mb-5">
+                                  <div class="qa m-2 col-md-5 border rounded"><div class="m-0">11 responses</div><div class = "headline">200 rescued dogs almost ready for adoption, can pounds euthanize dogs legally?</div></div>
+                                  <div class="qa m-2 col-md-5 border rounded"><div class="m-0">12 responses</div><div class = "headline">Animal rights sa mga lab rats tsaka lab monkeys: may karapatan ba sila?</div></div>
+                              </div>
+                              <div class = "row mb-5">
+                                  <div class="qa m-2 col-md-5 border rounded"><div class="m-0">41 responses</div><div class = "headline">Pwede ko ba kasuhan ang teacher ko sa pagmamahiya sa akin sa klase?</div></div>
+                                  <div class="qa m-2 col-md-5 border rounded"><div class="m-0">5 responses</div><div class = "headline">Cinacat-call ako ng mga lalaking nadadaanan ko sa barangay namen</div></div>
+                              </div>
+                              <div class = "row mb-5">
+                                  <div class="qa m-2 col-md-5 border rounded"><div class="m-0">7 responses</div><div class = "headline">Pagkukuha ng cellphone ko ng aking magulang?</div></div>
+                                  <div class="qa m-2 col-md-5 border rounded"><div class="m-0">13 responses</div><div class = "headline">Kanino mapupunta ang custody ng anak namin pag nag hiwalay kami ng aking asawa?</div></div>
+                              </div>
+                          </div>
+
+                <!-- </div>
+            </div> -->
+            <!-- <div class = "row">
+                <div class = "col">
+                    <!-- Search form -->
+                    <!-- <input id="searchBar" class="form-control" type="text" placeholder="Search" aria-label="Search"> -->
+                <!-- </div>
+            </div> --> -->
+
+        <!-- </div> -->
 
     </body>
 </html>

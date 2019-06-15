@@ -26,6 +26,7 @@ $(document).ready(function() {
         if(keycode == 13){
             // alert ($(this).val());
             $(".feed").append("<h3>" + $(this).val());
+            $("#comment").val('');
         }
 
     });
