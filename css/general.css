@@ -81,9 +81,14 @@ a:hover{
   /* max-width: 50%; */
 }
 
+.percentage:hover{
+  color: #FFDD03!important;
+  cursor: pointer;
+}
+
 #currentcase .cc-post *{
   color: black;
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 #currentcase .top{
@@ -126,6 +131,7 @@ a:hover{
   color: white;
   cursor: pointer;
 }
+
 
 #currentcase .expand{
   padding: 5px;
