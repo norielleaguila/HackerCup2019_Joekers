@@ -28,9 +28,9 @@ const images = {
 
 
 $(document).ready(() => {
-	projectTitles.forEach((title) => {
-		addProject(title);
-	});
+	// projectTitles.forEach((title) => {
+		// addProject(title);
+	// });
 });
 
 
