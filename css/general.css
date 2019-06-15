@@ -1,11 +1,42 @@
 body{
-  background-color: #000000;
+  background-color: #1a1f28;
+}
+
+body *{
+  color: white;
+}
+
+#navBar{
+  background: linear-gradient( black, rgba(26, 26, 26, 0));
+
+}
+
+.dropdown:hover{
+  cursor: pointer;
+}
+
+.link:hover{
+  color: #FFDD03;
 }
 
 #currentcase .top{
-  
+
 }
 
 #currentcase .description{
   visibility: hidden;
+}
+
+.cc-post{
+  margin-top: 5rem;
+}
+
+.cc-post *{
+  color: black;
+  font-weight: 400;
+}
+
+.cc-post > *, .cc-post{
+  border: white 1px groove;
+  background-color: white;
 }
